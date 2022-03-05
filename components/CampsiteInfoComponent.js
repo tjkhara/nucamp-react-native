@@ -145,9 +145,9 @@ class CampsiteInfo extends Component {
               showRating
               startingValue={this.state.rating}
               imageSize={40}
-              onFinishRating={rating => this.setState({ rating: rating })}
+              onFinishRating={newRating => this.setState({ rating: newRating })}
               style={{ paddingVertical: 10 }}
-            />
+            ></Rating>
             <Input
               placeholder="Your name"
               leftIcon={{ name: "user-o", type: "font-awesome" }}
